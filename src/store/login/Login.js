@@ -1,10 +1,16 @@
-const state = {}
+const state = {
+  isloading: false
+}
 
 const getters = {}
 
 const actions = {}
 
-const mutations = {}
+const mutations = {
+  setLoading (state, val) {
+    state.isloading = val
+  }
+}
 
 export default{
   state,

@@ -9,11 +9,13 @@ import Task from './task/Task'
 Vue.use(Vuex)
 
 export default new Vuex.Store({
+  state: {},
+  mutations: {},
   modules: {
-    login,
-    connection,
-    dashboard,
-    task,
-    overall_module
+    Login,
+    Connection,
+    Dashboard,
+    Task,
+    OverallMoudle
   }
 })
