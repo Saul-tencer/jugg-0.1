@@ -9,7 +9,9 @@ import Task from './task/Task'
 Vue.use(Vuex)
 
 export default new Vuex.Store({
-  state: {},
+  state: {
+    API: 'http://localhost:5000/'
+  },
   mutations: {},
   modules: {
     Login,

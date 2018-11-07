@@ -5,6 +5,9 @@ import App from './App'
 import router from './router'
 import Vuetify from 'vuetify'
 import store from './store'
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+import VeeValidate from 'vee-validate'
 import OverallConfig from './components/overall_moudle/OverallConfig.js'
 
 // import css lib
@@ -14,6 +17,8 @@ import 'material-design-icons-iconfont/dist/material-design-icons.css'
 Vue.config.productionTip = false
 Vue.use(OverallConfig)
 Vue.use(Vuetify)
+Vue.use(VeeValidate)
+Vue.use(VueAxios, axios)
 
 /* eslint-disable no-new */
 new Vue({
